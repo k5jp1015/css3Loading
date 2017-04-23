@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+header h1{
+    font-size: 120%;
+    color:#313131;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: 5px;
+}
+
+div.underBody{
+    width:100%;
+    height: 100%;
+}
+
+div.loading {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 50%;
+    text-align: center;
+    /*グラデーションカラー*/
+    background-color: #7cbc0a;
+    background-image: radial-gradient( #df0 0, #7cbc0a 100%);
+    /*↓中央寄せするために外した*/
+    /*position: absolute; */
+    /*↓中央寄せするために外した*/
+    /*display: inline-block*/
+
+    /*アニメーションの起動*/
+    /*animation: bounce 4.5s infinite ease-in-out;*/
+    /*アニメーションの起動*/
+    /*animation: scaleout 3.0s infinite ease-in-out;*/
+}
+
+div.loadingText{
+    width: 475px;
+    height: 80px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.foutainTextG{
+    font-size: 4em;
+    font-family: "Arial Black";
+    font-weight:normal;
+}
+
+div.foutainTextG {
+    float: left;
+    animation: bounce_fountainTextG 3.09s infinite ease-in-out;
+    transform:scale(.5);
+}
+
+#fountainTextG_1{
+	animation-delay:0.75s;
+}
+#fountainTextG_2{
+	animation-delay:0.9s;
+}
+#fountainTextG_3{
+	animation-delay:1.05s;
+}
+#fountainTextG_4{
+    width: 15px;
+    height: 45px;
+	animation-delay:1.2s;
+}
+#fountainTextG_5{
+	animation-delay:1.35s;
+}
+#fountainTextG_6{
+	animation-delay:1.5s;
+}
+#fountainTextG_7{
+	animation-delay:1.65s;
+}
+#fountainTextG_8{
+	animation-delay:1.80s;
+}
+#fountainTextG_9{
+	animation-delay:1.95s;
+}
+#fountainTextG_10{
+    width: 20px;
+	animation-delay:2.10s;
+}
+#fountainTextG_11{
+	animation-delay:2.25s;
+}
+#fountainTextG_12{
+	animation-delay:2.40s;
+}
+
+
+/*アニメーションの作成 縮小するパターン*/
+@keyframes bounce {
+    0% , 100%{transform: scale(0.0)}
+    50% {transform: scale(1.0)}
+}
+
+/*アニメーションの作成 スケールアウトするパターン*/
+@keyframes scaleout {
+    0%{
+        transform: scale(0.0);
+    } 100% {
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce_fountainTextG{
+    0%{
+        transform: scale(1);
+        color:black;
+    }100%{
+        transform: scala(.5);
+        color: white;
+        opacity: 0;
+    }
+}
